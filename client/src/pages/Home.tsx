@@ -90,7 +90,7 @@ const Home = () => {
     }
     setTimeout(() => {
       callback(filterOptions(inputValue));
-    }, 500);
+    }, 800);
   };
   const Select = (props) => {
     return (
