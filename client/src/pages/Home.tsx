@@ -243,8 +243,8 @@ const Home = () => {
                   <div>
                     <input
                       value={passengers}
-                      readOnly
-                      className="w-[10px] pointer-events-none"
+                      // readOnly
+                      className="w-[15px]"
                       ref={selectRef}
                     />
                   </div>
