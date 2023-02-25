@@ -17,7 +17,7 @@ const Result = () => {
   const intermediateCities_init = queryParameters.get("intermediateCities"); // intermidate cities
   useEffect(() => {
     axios
-      .post("/get_result", {
+      .post("api/get_result", {
         origin: origin_init,
         destination: destination_init,
         intermediateCities: intermediateCities_init?.split(":"),

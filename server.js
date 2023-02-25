@@ -18,7 +18,7 @@ connectDB();
 app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(express.static(path.join(__dirname, "client", "build")));
 app.use(bodyParser.json());
-app.use(routes);
+app.use("/api", routes);
 const __dirname = path.resolve();
 
 if (

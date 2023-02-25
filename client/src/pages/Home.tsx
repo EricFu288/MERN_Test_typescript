@@ -74,7 +74,7 @@ const Home = () => {
   const loadOptions = (inputValue: string, callback: (options) => void) => {
     if (inputValue.length === 1) {
       axios
-        .get("/get_cities", {
+        .get("api/get_cities", {
           params: { key: inputValue },
         })
         .then((res) => {
