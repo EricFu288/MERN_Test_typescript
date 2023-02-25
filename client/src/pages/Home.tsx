@@ -24,7 +24,7 @@ const Home = () => {
   const selectRef = useRef<HTMLInputElement>(null); // passenger ref
   const navigate = useNavigate();
 
-  const filterColors = (inputValue: string) => {
+  const filterOptions = (inputValue: string) => {
     return options.filter((i) =>
       i.label.toLowerCase().includes(inputValue.toLowerCase())
     );
@@ -89,9 +89,8 @@ const Home = () => {
         .catch((err) => {});
     }
     setTimeout(() => {
-      callback(filterColors(inputValue));
+      callback(filterOptions(inputValue));
     }, 500);
-    // return filterColors(inputValue);
   };
   const Select = (props) => {
     return (
