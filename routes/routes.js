@@ -5,15 +5,16 @@ const router = express.Router();
 
 // retrive name of cities according to request
 router.get("/get_cities", async (req, res) => {
-  City.find({ city: new RegExp(req.query.key, "i") }, { city: 1, _id: 0 })
-    .then((cities) => {
-      res.status(200).json({
-        cities: cities,
-      });
-    })
-    .catch((err) => {
-      throw err;
-    });
+  res.json("asdfasfadsf");
+  // City.find({ city: new RegExp(req.query.key, "i") }, { city: 1, _id: 0 })
+  //   .then((cities) => {
+  //     res.status(200).json({
+  //       cities: cities,
+  //     });
+  //   })
+  //   .catch((err) => {
+  //     throw err;
+  //   });
 });
 
 // calculate travel distance
