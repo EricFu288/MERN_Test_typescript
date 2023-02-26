@@ -244,7 +244,7 @@ const Home = () => {
                     <input
                       value={passengers}
                       // readOnly
-                      className="w-[15px]"
+                      className="w-[45px] text-center"
                       ref={selectRef}
                     />
                   </div>
