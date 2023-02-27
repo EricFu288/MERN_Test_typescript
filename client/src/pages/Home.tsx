@@ -85,12 +85,10 @@ const Home = () => {
               value: res.data.cities[i].city,
             });
           }
+          callback(filterOptions(inputValue));
         })
         .catch((err) => {});
-    }
-    setTimeout(() => {
-      callback(filterOptions(inputValue));
-    }, 800);
+    } else callback(filterOptions(inputValue));
   };
   const Select = (props) => {
     return (
